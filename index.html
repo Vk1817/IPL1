@@ -34,9 +34,10 @@ body{
   box-shadow:0 0 25px rgba(255,0,150,0.2);
 }
 
+/* ✅ FIXED VIDEO */
 .video{
   width:100%;
-  height:200px;
+  aspect-ratio:16/9;
   border-radius:16px;
   overflow:hidden;
   border:2px solid rgba(255,0,150,0.4);
@@ -48,6 +49,7 @@ body{
   border:none;
 }
 
+/* LIVE */
 .live-box{
   margin:12px auto;
   width:90px;
@@ -73,6 +75,7 @@ body{
   font-weight:600;
 }
 
+/* AD */
 .ad-box{
   width:92%;
   margin:20px auto;
@@ -89,6 +92,7 @@ body{
   object-fit:cover;
 }
 
+/* INFO */
 .info-card{
   width:92%;
   margin:12px auto;
@@ -117,7 +121,11 @@ body{
 
 <div class="player-card">
   <div class="video">
-    <iframe src="https://tv4wep.pages.dev/?id=STAR%20SPORTS%202%20HD&name=ayna" allowfullscreen></iframe>
+    <iframe 
+      src="https://allrounder-live2.pages.dev/star/star-1"
+      allowfullscreen 
+      allow="autoplay; encrypted-media">
+    </iframe>
   </div>
 </div>
 
@@ -125,7 +133,9 @@ body{
 <div class="match-title">RCB vs SRH</div>
 
 <div class="ad-box">
-  <img src="https://via.placeholder.com/1080x300.png?text=YOUR+AD+BANNER">
+  <a href="https://wa.me/447955881183" target="_blank">
+    <img src="offstump.jpg" alt="Ad Banner">
+  </a>
 </div>
 
 <div class="info-card">
@@ -140,4 +150,3 @@ body{
 
 </body>
 </html>
-

@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +42,10 @@ body{
   border:2px solid rgba(255,0,150,0.4);
 }
 
-video{
+.video iframe{
   width:100%;
   height:100%;
   border:none;
-  border-radius:16px;
 }
 
 .live-box{
@@ -118,7 +117,7 @@ video{
 
 <div class="player-card">
   <div class="video">
-    <video id="video" controls autoplay></video>
+    <iframe src="https://allrounder-live2.pages.dev/star/star-1-hindi" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -139,24 +138,6 @@ video{
   <div class="value">1 of 74</div>
 </div>
 
-<!-- SHAKA PLAYER -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.6.0/shaka-player.compiled.js"></script>
-
-<script>
-async function initPlayer() {
-  const video = document.getElementById('video');
-  const player = new shaka.Player(video);
-
-  try {
-    await player.load("https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?__hdnea__=st=1774677628~exp=1774764028~acl=/*~hmac=c91d2d5036784738098bc23e2ac5fa216f66f7397a7c604c1552a7fe2957588c");
-  } catch (e) {
-    console.error("Error loading stream", e);
-  }
-}
-
-initPlayer();
-</script>
-
 </body>
 </html>
-```
+

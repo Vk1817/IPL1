@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ body{
 
 .video{
   width:100%;
-  height:220px;
+  height:200px;
   border-radius:16px;
   overflow:hidden;
   border:2px solid rgba(255,0,150,0.4);
@@ -45,10 +45,10 @@ body{
 video{
   width:100%;
   height:100%;
+  border:none;
   border-radius:16px;
 }
 
-/* LIVE */
 .live-box{
   margin:12px auto;
   width:90px;
@@ -63,7 +63,9 @@ video{
 }
 
 @keyframes pulse{
-  0%{opacity:1;}50%{opacity:0.5;}100%{opacity:1;}
+  0%{opacity:1;}
+  50%{opacity:0.5;}
+  100%{opacity:1;}
 }
 
 .match-title{
@@ -72,7 +74,6 @@ video{
   font-weight:600;
 }
 
-/* AD */
 .ad-box{
   width:92%;
   margin:20px auto;
@@ -89,7 +90,6 @@ video{
   object-fit:cover;
 }
 
-/* INFO */
 .info-card{
   width:92%;
   margin:12px auto;
@@ -149,7 +149,6 @@ async function initPlayer() {
 
   try {
     await player.load("https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?__hdnea__=st=1774677628~exp=1774764028~acl=/*~hmac=c91d2d5036784738098bc23e2ac5fa216f66f7397a7c604c1552a7fe2957588c");
-    console.log("Stream loaded");
   } catch (e) {
     console.error("Error loading stream", e);
   }
@@ -160,4 +159,4 @@ initPlayer();
 
 </body>
 </html>
-
+```
